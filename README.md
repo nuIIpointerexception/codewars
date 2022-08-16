@@ -1,4 +1,4 @@
-<img src= https://github.com/bwte/codewars/blob/main/image.png></img>
+<img src= https://github.com/bwte/codewars/blob/main/banner.png></img>
 
 A couple solutions of mine for the katas on [codewars.com](https://www.codewars.com/r/NcXLyg).
 

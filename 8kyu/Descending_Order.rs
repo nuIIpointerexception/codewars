@@ -13,8 +13,7 @@
  */
 
 fn descending_order(x: u64) -> u64 {
-    let mut c = x.to_string().chars().collect::<Vec<char>>(); // Collect all the characters from the string.
-    c.sort(); // Sort the chars inside the Vector.
-    c.reverse(); // Reverse the chars index in the Vector.
-    String::from_iter(c).parse::<u64>().unwrap() // Convert the chars back to u64.
+    let mut c = x.to_string().chars().collect::<Vec<char>>();
+    c.sort_unstable_by(|a, b| b.cmp(a));
+    c.into_iter().collect::<String>().parse::<u64>().unwrap(
 }
